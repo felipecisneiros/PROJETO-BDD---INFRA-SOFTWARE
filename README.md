@@ -46,7 +46,7 @@ backend/src/test/java/com/example/animematch/bdd/BuscarAnimesComFiltrosSteps.jav
     - O cadastro inicial dos animes de teste no banco em memória (@Dado que existem animes cadastrados no sistema).
     - A chamada ao método animeService.buscarAnimesComFiltros(...) conforme cada cenário (@Quando ...).
     - Asserções para verificar se a lista retornada contém exatamente os títulos esperados ou se está vazia (@Então ...).
-    - 
+      
 - Runner do Cucumber
 A integração com o JUnit é feita por meio da classe runner:
 backend/src/test/java/com/example/animematch/bdd/CucumberTest.java, anotada com @Cucumber, que descobre e executa automaticamente todas as features e steps.
