@@ -54,3 +54,38 @@ backend/src/test/java/com/example/animematch/bdd/CucumberTest.java, anotada com 
 - Dependências
 As dependências do Cucumber (cucumber-java, cucumber-junit-platform-engine, cucumber-spring) foram adicionadas ao backend/pom.xml com escopo de teste.
 Com isso, ao executar os testes (por exemplo, com mvn test no módulo backend), os cenários descritos em Gherkin são executados automaticamente contra o código real do AniMatch, garantindo que a funcionalidade de busca com filtros se comporte conforme o que foi especificado na história de usuário.
+
+
+##COMO RODAR:##
+
+#### Passo 1: Rodando o Backend
+No diretório `backend`, siga os passos abaixo:
+
+```bash
+# Execute o backend com o Spring Boot
+mvn spring-boot:run
+```
+
+#### Passo 2: Rodando o Frontend
+No diretório `frontend`, siga os passos abaixo:
+
+```bash
+# Instale as dependências do projeto
+npm install
+
+# Instale o axios (necessário para chamadas HTTP)
+npm install axios
+
+# Inicie o servidor de desenvolvimento
+npm run dev
+```
+
+#### Testes: Como rodar
+No diretório `backend`, siga os passos abaixo:
+
+```bash
+# Execute os testes com o Maven
+mvn test
+```
+
+
